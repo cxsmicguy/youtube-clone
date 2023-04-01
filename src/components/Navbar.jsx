@@ -21,7 +21,7 @@ const Navbar = () => {
     }, [selectedCategory]);
 
   return (
-    <div sx={{position:  "sticky", top: 0}}>
+    <Stack sx={{position:  "sticky", top: 0, background: '#000', zIndex: "10"}}>
       <Stack direction="row" alignItems="center" p={2} pb={0} sx={{ background: '#000', top: 0, justifyContent: "space-between" }}>
         <Stack direction="row" alignItems="center" sx={{px: '10px'}}>
           <MenuOutlinedIcon sx={{color: "white", marginRight: "20px"}}/>
@@ -41,7 +41,7 @@ const Navbar = () => {
           }}
           selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       </Box>
-    </div>
+    </Stack>
   );
 };
 
